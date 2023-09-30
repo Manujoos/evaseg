@@ -1,0 +1,31 @@
+<div>
+    <div class="row">              
+        <div class="col-sm-6" id="columna2">
+            <form (ngSubmit)="SaveData(formTemplate)" #formTemplate="">
+                <img src="./assets/imgs/evaseg-logo1.png" class="logo-login">
+                <br>
+                <h1 class="login-titulo">Inciar Sesión</h1>
+                <br>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label"> Número de documento</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <button type="submit" class=" btn btn-Ingresar">Ingresar</button>
+                <br>
+                <div class="contraseña">
+                    <button class="recover" (click)="Navigate('/recoverPassword')">
+                        ¿Olvidaste tu contraseña?
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="col-sm-6" id="columna1">  
+            <img src="./assets/imgs/login-img.png" class="login-img">
+        </div>        
+    </div>     
+</div>
